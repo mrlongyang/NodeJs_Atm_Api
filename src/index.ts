@@ -47,6 +47,8 @@ app.post("/atm/withdraw", (req: Request, res: Response) => {
     });
 })
 
-app.listen(4000, () => {
-    console.log("ATM API is running on http://localhost:4000");
+const port = 4000;
+
+app.listen(port, () => {
+    console.log(`ATM API is running on http://localhost:${port}`);
 });
